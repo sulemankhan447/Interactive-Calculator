@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,6 +13,7 @@
         android:layout_height="60dp">
 
         <TextView
+            android:id="@+id/tvTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -23,6 +23,7 @@
             android:textStyle="bold" />
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/layoutOutput"
         android:layout_marginTop="20dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/rounded_corners"
@@ -31,11 +32,14 @@
         android:layout_marginLeft="30dp"
         android:layout_height="100dp">
         <TextView
+            android:id="@+id/tvInput"
             android:textSize="20sp"
             android:textStyle="bold"
             android:gravity="center_vertical|center_horizontal"
             android:textColor="@color/colorWhite"
-            android:text="30+250-10-100*2922"
+            android:text=""
+            android:textColorHint="@color/colorWhite"
+            android:hint="Enter Digits"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
@@ -164,6 +168,7 @@
         style="@style/TextStyle"
         android:id="@+id/btnSeven"/>
     <Button
+        android:id="@+id/btnEight"
         android:textColor="@color/colorWhite"
         android:background="@drawable/black_rounded_button"
         style="@style/TextStyle"
@@ -181,6 +186,7 @@
         android:id="@+id/btnNine"
         />
     <Button
+        android:id="@+id/btnDiv"
         android:text="/"
         android:layout_above="@+id/btnMul"
         android:layout_marginLeft="290dp"
