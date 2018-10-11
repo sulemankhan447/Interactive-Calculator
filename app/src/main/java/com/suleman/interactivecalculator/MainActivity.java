@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         btnEquals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tvInput.setText("20");
+                tvInput.setText("Result is Answer");
             }
         });
         btnZero.setOnClickListener(new View.OnClickListener() {
